@@ -1,0 +1,10 @@
+<div class="card h-100">
+    <img src="{{foto}}" class="card-img-top h-50" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{nome}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">R$ {{preco}}</h6>
+        <p class="card-text" [(ngModel)]="qntd">{{qntd}} unidades disponiveis</p>
+        <input type="number" [(ngModel)]="qtdCarrinho" min="1" max="{{qntd}}" class="input-group">
+        <button class="btn btn-success mt-2" (click)="adicionarProduto()">Adicionar</button>
+    </div>
+</div>
